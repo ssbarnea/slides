@@ -1,0 +1,50 @@
+baseURL: "https://sbarnea.com/slides"
+languageCode: "en-us"
+title: "Mastering ansible-lint"
+markup:
+  highlight:
+    style: tango
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  reveal_hugo:
+    highlight_theme: github
+    history: true
+  templates:
+    grey:
+      background: "#424242"
+      transition: "convex"
+themesDir: themes
+theme: reveal-hugo
+
+disableKinds: ["sitemap", "RSS"]
+
+# uncomment for browsing at file:///
+# relativeURLs = true
+# uglyURLs = true
+
+author:
+  name: "Sorin Sbarnea"
+
+
+# choose between Hugo compile-time or Highlight.js
+# syntax highlighting for code inside of code fences
+# [markup.highlight]
+# codeFences = false  # use highlight.js
+# codeFences = true  # use hugo highlighting at compile time
+# style = "tango"  # set a style for hugo highlighting
+
+outputFormats:
+  Reveal:
+    baseName: "index"
+    mediaType: "text/html"
+    isHTML: true
+
+
+deployment:
+  targets:
+    - name: aws
+      URL: s3://sbarnea.com?region=eu-west-1&prefix=slides/
