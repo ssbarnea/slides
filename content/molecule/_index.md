@@ -252,6 +252,7 @@ Hint: Use `config.yml` to follow [`DRY principle`](https://en.wikipedia.org/wiki
 
 ### That's it! Any Questions?
 
-* [#ansible-galaxy](irc://#ansible-molecule) channel on irc
-* Pull Requests welcomed
+* [#ansible-molecule](irc://#ansible-molecule) channel on irc
+* [Docs](https://molecule.readthedocs.io)
+* Pull Requests welcome
 * Check exiting tickets
