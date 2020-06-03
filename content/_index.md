@@ -16,5 +16,6 @@ transition_speed = "fast"
 
 * [Mastering ansible-lint](ansible-lint)
 * [Using Molecule to test Ansible code](molecule)
+* [Linting with pre-commit tool](pre-commit)
 
 By [@ssbarnea](https://sbarnea.com/)
